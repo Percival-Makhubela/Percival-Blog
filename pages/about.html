@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles can be retained here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-image: url('../img/c.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            margin-bottom: 20px; /* Added bottom margin for separation */
+            text-align: center;
+        }
+        .main ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .main ul li {
+            float: left;
+            margin-right: 20px; /* Spacing between menu items */
+        }
+
+        .main ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .main ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+        }
+
+        .main ul li.active a {
+            background-color: #007bff; /* Active link background color */
+        }
+
+        h1 {
+            font-size: 3em; /* Increased font size */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 20px 0; /* Added padding top and bottom */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 10px; /* Rounded corners */
+        }
+        p {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .drop-cap::first-letter {
+            font-size: 3em;
+            font-weight: bold;
+            float: left;
+            margin-right: 8px;
+            line-height: 1;
+        }
+        .founder-img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 20px 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">PercivalTech</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">HOME</a>
+                    </li>
+                    <!-- Add more menu items as needed -->
+                </ul>
+            </div>
+        </nav>
+        <h1 class="text-center">About Our Company</h1>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="drop-cap">Our team of skilled professionals is dedicated to delivering top-notch services in web development, software solutions, and blog design. We aim to provide innovative and effective solutions that not only fulfill our clients' requirements but also surpass their expectations. With extensive experience and a deep passion for technology, we are committed to achieving outstanding results that drive your business ahead.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Meet Our Founder</h2>
+                <img src="../img/p.jpg" alt="Picture of Percival Makhubela" class="founder-img">
+                <p>Percival Makhubela, Founder and CEO. Percival Makhubela founded our company with a vision to revolutionize digital solutions for businesses worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url('../img/c.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #007bff;
+    bottom: -10px;
+    left: 25%;
+}
+
+.main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.main ul li {
+    float: left;
+    margin-right: 20px; /* Spacing between menu items */
+}
+
+.main ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.main ul li a:hover {
+    background-color: #111;
+}
+
+.main ul li.active {
+    background-color: #007bff;
+}
+
+.main ul li.active a {
+    color: white;
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}

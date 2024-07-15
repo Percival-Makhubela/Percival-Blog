@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS (already included) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-image: url('../img/c.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 36px;
+            text-transform: uppercase;
+            position: relative;
+        }
+        h1::before {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: #007bff;
+            bottom: -10px;
+            left: 25%;
+        }
+        .main ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 8px;
+        }
+
+        .main ul li {
+            float: left;
+            margin-right: 20px; /* Spacing between menu items */
+        }
+
+        .main ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .main ul li a:hover {
+            background-color: #111;
+        }
+
+        .main ul li.active {
+            background-color: #007bff;
+        }
+
+        .main ul li.active a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PercivalTech</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">HOME</a>
+                </li>
+                <!-- Add more menu items here -->
+            </ul>
+        </div>
+    </nav>
+    <h1>Our Services</h1>
+  </header>
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item text-center">
+                        <i class="fas fa-code service-icon"></i>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Front end and back end development for dynamic web applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item text-center">
+                        <i class="fas fa-cogs service-icon"></i>
+                        <h3 class="service-title">Software Development</h3>
+                        <p class="service-description">Custom software solutions tailored to your business requirements.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item text-center">
+                        <i class="fas fa-paint-brush service-icon"></i>
+                        <h3 class="service-title">Blog Design</h3>
+                        <p class="service-description">Engaging and responsive blog designs that enhance user experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <h2>Contact Us Today</h2>
+                    <p>To discuss how we can assist you with your project!</p>
+                    <p><i class="fas fa-phone-alt"></i> Phone: +2790151029</p>
+                    <p><i class="far fa-envelope"></i> Email: percivalmakhubela@gmail.com</p>
+                    <!-- Optional: Add your address here -->
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/percivak.makhubela" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/+790151029" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://x.com/Makhubela_HP" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/Percival-Makhubela" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

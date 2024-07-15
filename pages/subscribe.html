@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PercivalTech Innovation - Subscribe Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles specific to this page */
+        body {
+            background-image: url('../img/c.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif; /* Example font family */
+            margin: 0; /* Added to remove default margin */
+            padding: 0; /* Added to remove default padding */
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.8); /* Example background color */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .subscribe-form {
+            text-align: left;
+        }
+        .subscribe-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .subscribe-form input[type="text"],
+        .subscribe-form input[type="email"],
+        .subscribe-form input[type="tel"],
+        .subscribe-form input[type="password"],
+        .subscribe-form select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .subscribe-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        .subscribe-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        /* Header styles */
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .main {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main ul {
+            float: right;
+            list-style-type: none;
+            margin-top: 0; /* Adjusted to align with the header */
+        }
+        .main ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        .main ul li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        .main ul li.active a {
+            border-bottom: 2px solid #4CAF50;
+        }
+        .main ul li a:hover {
+            border-bottom: 2px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <div class="main">
+        <ul>
+            <li class="active"><a href="../index.html">HOME</a></li>
+        </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="title">SUBSCRIBE</div>
+    <div class="subscribe-form">
+        <form action="subscribe.php" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name.." required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username.." required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email.." required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number.." required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password.." required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password.." required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country.." required>
+
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+  </div>
+
+</body>
+</html>
